@@ -34,17 +34,17 @@ function MyApp({ Component, pageProps }) {
       <link rel="icon" href="/favicon.ico" />
       
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Anky - Unleash Your Creativity" />
-      <meta property="og:description" content="Anky helps you overcome writer's block by providing a streamlined, distraction-free writing environment." />
-      <meta property="og:image" content="https://anky.degen/images/librarian.png" />
+      <meta property="og:title" content="Anky - Just Write. We will do the rest." />
+      <meta property="og:description" content="We help you overcome writer's block by providing a streamlined, distraction-free writing environment." />
+      <meta property="og:image" content="https://frontend-cyan-seven.vercel.app/images/librarian.png" />
       <meta property="og:url" content="https://anky.degen" />
       <meta property="og:site_name" content="Anky" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@anky" />
       <meta name="twitter:title" content="Anky - Unleash Your Creativity" />
-      <meta name="twitter:description" content="Overcome writer's block with Anky's distraction-free writing platform." />
-      <meta name="twitter:image" content="https://anky.degen/images/librarian.png" />
+      <meta name="twitter:description" content="Overcome writer's block with our distraction-free writing platform." />
+      <meta name="twitter:image" content="https://frontend-cyan-seven.vercel.app/images/librarian.png" />
       <meta name="twitter:url" content="https://anky.degen" />
       </Head>
         <Component
