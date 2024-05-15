@@ -34,6 +34,7 @@ const WritingGame = ({ writingGameSettings }) => {
   const [castCreated, setCastCreated] = useState(false);
   const [castId, setCastId] = useState(null);
   const [deletingCast, setDeletingCast] = useState(false)
+  const [flag, setFlag] = useState(false)
 
 
   const startingIntervalRef = useRef(null);
@@ -46,7 +47,6 @@ const WritingGame = ({ writingGameSettings }) => {
       textAreaRef.current.scrollTop = textAreaRef.current.scrollHeight;
     }
   };
-
   useEffect(() => {
     // state management for the 8 second timer trigger
     if (sessionStarted && !isTimeOver) {
@@ -54,7 +54,10 @@ const WritingGame = ({ writingGameSettings }) => {
         const now = new Date().getTime();
         const elapsedTimeBetweenKeystrokes = Date.now() - lastKeystroke;
         if (elapsedTimeBetweenKeystrokes > secondsOfLife * 1000) {
-          finishWritingSession()
+          if(!flag){
+            finishWritingSession()
+            setFlag(true);
+          }
           clearInterval(keystrokeIntervalRef.current);
         } else {
           const newLifeBarLength =
